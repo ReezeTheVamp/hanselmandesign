@@ -157,6 +157,38 @@ h3 {
 }
 
 
+/* Mobile Navigation Fix */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column; /* Stacks links vertically */
+        align-items: center;    /* Centers them */
+        gap: 10px;              /* Adds breathing room between links */
+    }
+
+    .main-nav li {
+        margin: 5px 0;          /* Removes side margins, adds vertical ones */
+    }
+
+    .main-nav a {
+        font-size: 1.4em;       /* Slightly smaller font for mobile */
+    }
+
+.name-and-logo {
+        gap: 2%; /* Reduce the gap between logos and name */
+        padding: 0 10px; /* Ensure it doesn't touch the screen edges */
+    }
+
+    .header-logo {
+        height: 4em; /* Significantly reduce logo size from 10em */
+    }
+
+    .site-title {
+        font-size: 1.8em; /* Shrink the name from 3.5em so it fits on one line */
+        letter-spacing: 1px; /* Tighter letters for mobile space */
+    }
+}
+
+
 
 
 
