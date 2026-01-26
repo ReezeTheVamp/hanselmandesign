@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYLE HANSELMAN | CRANMER HALL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Georama:ital,wght@0,100..900;1,100..900&family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="name-and-logo">
+                <img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo left-logo">
+                <h1 class="site-title">KYLE HANSELMAN</h1>
+                <img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo right-logo">
+            </div>
+            <p class="site-subtitle">Video Game Designer</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="artwork.html">ARTWORK</a></li>
+				<li><a href="writing.html">WRITING</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="portfolio-content">
+
+        <section id="about-content" class="section project-list">
+            <h2 class="centered-header">cranmer hall</h2>
+
+		<section id="technology-used" class="section">
+			<h3 class="centered-header">technology used</h3>
+			
+			<!-- Adds all software logos to the page -->
+			<div class="logo-row-container">
+				
+				<div class="logo-item">
+					<img src="img/icons/unreal.svg" alt="Unreal Engine Logo">
+					<p>Unreal Engine</p>
+				</div>
+
+				<div class="logo-item">
+					<img src="img/icons/ad_maya.svg" alt="Autodesk Maya Logo">
+					<p>Autodesk Maya</p>
+				</div>
+
+				<div class="logo-item">
+					<img src="img/icons/a_substance.svg" alt="Substance Painter Logo">
+					<p>Substance Painter</p>
+				</div>
+				
+				<div class="logo-item">
+					<img src="img/icons/a_photoshop.svg" alt="Photoshop Logo">
+					<p>Adobe Photoshop</p>
+				</div>
+		</section>
+
+
+		<section class="video-container-section">
+			<h3 class="centered-header">Final Presentation</h3>
+			<div class="video-responsive-wrapper">
+				
+				<iframe width="560" height="315" 
+					src="https://www.youtube.com/embed/G1hnivzAvZU?si=yZGRGoA_GhjBVvbT" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen>
+				</iframe>
+			</div>	
+			<p class="caption-text">I came across Cranmer Hall in Savannah while studying at SCAD. I found its gothic-inspired architecture intriguiging and, at the time, it was a great candidate to try my hand at modular assets due to its repeating shapes.<p>
+			</div>
+		</section>
+
+
+		<section class="image-gallery-container" id="gallery-finalrenders">
+			<h3 class="centered-header">Final Renders</h3>
+
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-finalrenders')">&#10094;</a>
+
+				<div class="mySlides gallery-finalrenders-slide fade">
+					<img src="img/crnhl/Screen_01.png" style="width:100%" alt="Cranmer Front">
+				</div>
+				
+				<div class="mySlides gallery-finalrenders-slide fade">
+					<img src="img/crnhl/Screen_02.png" style="width:100%" alt="Cranmer Back">
+				</div>
+				
+				<div class="mySlides gallery-finalrenders-slide fade">
+					<img src="img/crnhl/Screen_03.png" style="width:100%" alt="Cranmer Side">
+				</div>
+				
+				<div class="mySlides gallery-finalrenders-slide fade">
+					<img src="img/crnhl/Screen_04.png" style="width:100%" alt="Cranmer Light">
+				</div>				
+
+				<div class="mySlides gallery-finalrenders-slide fade">
+					<img src="img/crnhl/Screen_05.png" style="width:100%" alt="Cranmer Window">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-finalrenders')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/crnhl/Screen_01.png" onclick="currentSlide(1, 'gallery-finalrenders')" alt="Cranmer Front">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/crnhl/Screen_02.png" onclick="currentSlide(2, 'gallery-finalrenders')" alt="Cranmer Back">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/crnhl/Screen_03.png" onclick="currentSlide(3, 'gallery-finalrenders')" alt="Cranmer Side">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/crnhl/Screen_04.png" onclick="currentSlide(4, 'gallery-finalrenders')" alt="Cranmer Light">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/crnhl/Screen_05.png" onclick="currentSlide(5, 'gallery-finalrenders')" alt="Cranmer Window">
+			</div>
+				<p class="caption-text">It was enjoyable figuring out how to use my kit to best mimic this structure, and I think it came out well. Finding a way to make the glass appear correct without revealing the lack of an interior was an exciting challenge; I opted for blinds behind the windows for a natural appearance. Looking back, I wish I had spent more time lighting this scene. Unfortunately, at the time of writing, the file was lost in a hard drive failure; I was lucky to have an online backup of the renders.<p>
+			</div>
+		</section>
+		
+		<section class="section standalone-image-section">
+			<h3 class="centered-header">Reference Image</h3>
+			<div class="image-wrapper">
+				<img src="img/crnhl/Reference.png" alt="Cranmer Hall Reference" class="centered-image">
+				
+				<p class="caption-text">Of the many reference images I used for this project, most of which were taken by me and lost, I felt this to be the most prepresentative of the architecture.</p>
+			</div>
+		</section>
+			
+
+		<section class="image-gallery-container" id="gallery-assetlibrary">
+			<h3 class="centered-header">asset library</h3>
+
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-assetlibrary')">&#10094;</a>
+
+				<div class="mySlides gallery-assetlibrary-slide fade">
+					<img src="img/crnhl/Model_Kit.png" style="width:100%" alt="Cranmer Hall Model Kit">
+				</div>
+				
+				<div class="mySlides gallery-assetlibrary-slide fade">
+					<img src="img/crnhl/Maya_Render.png" style="width:100%" alt="Cranmer Hall Maya Ambient Occlussion Render">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-assetlibrary')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-assetlibrary-thumb" src="img/crnhl/Model_Kit.png" onclick="currentSlide(1, 'gallery-assetlibrary')" alt="Cranmer Hall Model Kit">
+				<img class="thumbnail-indicator demo gallery-assetlibrary-thumb" src="img/crnhl/Maya_Render.png" onclick="currentSlide(2, 'gallery-assetlibrary')" alt="Cranmer Hall Maya Ambient Occlussion Render">
+
+			</div>
+				<p class="caption-text">Cranmer Hall was one of those buildings that seemed to have a very consistent style, but once you set out to make the assets, you realize every rule has an exception; I ended up with a lot more meshes than I had hoped. Anyway, I created a modular kit for its creation. In the future, it would be fun to make a crazy gothic labyrinth using these pieces.<p>
+			</div>
+		</section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Kyle Hanselman. Thanks for visiting HanselmanDesign.com!</p>
+        <a href="#top" class="back-to-top">Back To Top</a>
+    </footer>
+
+	<script>
+		// Java script that runs my galleries
+		// An object to store the current slide index for each unique gallery
+		var slideIndexMap = {};
+
+		// Initialize all galleries on page load
+		document.addEventListener("DOMContentLoaded", function() {
+			// Find all unique gallery IDs on the page
+			const galleries = document.querySelectorAll('.image-gallery-container');
+			galleries.forEach(gallery => {
+				const galleryId = gallery.id;
+				// Initialize each gallery's index to 1 (the first slide)
+				slideIndexMap[galleryId] = 1;
+				// Display the first slide for each gallery
+				showSlides(1, galleryId);
+			});
+		});
+
+		// Function to change the slide by a relative amount (n = -1 or 1)
+		function plusSlides(n, galleryId) {
+			showSlides(slideIndexMap[galleryId] += n, galleryId);
+		}
+
+		// Function to jump to a specific slide (n = 1, 2, 3...)
+		function currentSlide(n, galleryId) {
+			showSlides(slideIndexMap[galleryId] = n, galleryId);
+		}
+
+		// Core function to show the correct slide and update the thumbnails
+		function showSlides(n, galleryId) {
+			let i;
+			// Target only the slides/thumbs belonging to the current galleryId
+			let slides = document.querySelectorAll(`.${galleryId}-slide`);
+			let thumbs = document.querySelectorAll(`.${galleryId}-thumb`);
+			
+			if (slides.length === 0) return; // Exit if no slides found
+
+			// Handle cycling (going past the last slide or before the first)
+			if (n > slides.length) {
+				slideIndexMap[galleryId] = 1;
+			}
+			if (n < 1) {
+				slideIndexMap[galleryId] = slides.length;
+			}
+			
+			// Hide all slides
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			
+			// Remove 'active-thumb' class from all thumbnails
+			for (i = 0; i < thumbs.length; i++) {
+				thumbs[i].className = thumbs[i].className.replace(" active-thumb", "");
+			}
+			
+			// Show the current slide and highlight the corresponding thumbnail
+			slides[slideIndexMap[galleryId]-1].style.display = "block";  
+			thumbs[slideIndexMap[galleryId]-1].className += " active-thumb";
+		}
+	</script>
+
+</body>
+</html>

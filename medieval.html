@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYLE HANSELMAN | MEDIEVAL SKYSCRAPERS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Georama:ital,wght@0,100..900;1,100..900&family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="name-and-logo">
+                <img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo left-logo">
+                <h1 class="site-title">KYLE HANSELMAN</h1>
+                <img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo right-logo">
+            </div>
+            <p class="site-subtitle">Video Game Designer</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="artwork.html">ARTWORK</a></li>
+				<li><a href="writing.html">WRITING</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="portfolio-content">
+
+        <section id="about-content" class="section project-list">
+            <h2 class="centered-header">medieval skyscrapers</h2>
+
+		<section id="technology-used" class="section">
+			<h3 class="centered-header">technology used</h3>
+			
+			<!-- Adds all software logos to the page -->
+			<div class="logo-row-container">
+				
+				<div class="logo-item">
+					<img src="img/icons/unreal.svg" alt="Unreal Engine Logo">
+					<p>Unreal Engine</p>
+				</div>
+
+				<div class="logo-item">
+					<img src="img/icons/ad_maya.svg" alt="Autodesk Maya Logo">
+					<p>Autodesk Maya</p>
+				</div>
+
+				<div class="logo-item">
+					<img src="img/icons/a_illustrator.svg" alt="Adobe Illustrator Logo">
+					<p>Adobe Illustrator</p>
+				</div>
+				
+				<div class="logo-item">
+					<img src="img/icons/a_photoshop.svg" alt="Adobe Photoshop Logo">
+					<p>Adobe Photoshop</p>
+				</div>
+				
+				<div class="logo-item">
+					<img src="img/icons/a_substance.svg" alt="Substance Logo">
+					<p>Substance</p>
+				</div>
+				
+		</section>
+
+
+		<section class="video-container-section">
+			<h3 class="centered-header">final presentation</h3>
+			<div class="video-responsive-wrapper">
+				
+				<iframe width="560" height="315" 
+					src="https://www.youtube.com/embed/hetK8lYcuUI?si=ArI9mBqr5b65qJ58" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen>
+				</iframe>
+			</div>	
+			<p class="caption-text">With Medieval Skyscrapers, I pushed my knowledge of foliage, terrain, and lighting in Unreal Engine while improving my understanding of modular environment design. I think the final environment is a bit inorganic, but I'm happy with my progress.<p>
+			<p class="caption-text">All presented assets are my own - meshes, materials, particles, lighting, etc. withthe exception of the beautiful music by Peter Gundry.<p>
+			</div>
+		</section>
+
+
+		<section class="image-gallery-container" id="gallery-finalrenders">
+			<h3 class="centered-header">final renders</h3>
+
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-finalrenders')">&#10094;</a>
+
+				<div class="mySlides gallery-finalrenders-slide fade">
+					<img src="img/mlss/Screen_01.png" style="width:100%" alt="An Unreal Engine Render of the environment showing the murdered victim hanging above the canal wrapped in cloth and a sign displaying their crime of selling rats">
+				</div>
+				
+				<div class="mySlides gallery-finalrenders-slide fade">
+					<img src="img/mlss/Screen_02.png" style="width:100%" alt="An Unreal Engine Render of the environment showing the back alleys of the environment filled with fog and dim light">
+				</div>
+				
+				<div class="mySlides gallery-finalrenders-slide fade">
+					<img src="img/mlss/Screen_03.png" style="width:100%" alt="An Unreal Engine Render of the environment showing the early dawn sky and many stories of tudor style buildings rising over the hanging corpse">
+				</div>
+				
+				<div class="mySlides gallery-finalrenders-slide fade">
+					<img src="img/mlss/Screen_04.png" style="width:100%" alt="An Unreal Engine Render of the environment showing the corpse within the context of the immense medieval tudor structures">
+				</div>				
+
+				<div class="mySlides gallery-finalrenders-slide fade">
+					<img src="img/mlss/Screen_05.png" style="width:100%" alt="An Unreal Engine Render of the environment showing the early dawn sky and many stories of tudor style buildings from a different angle">
+				</div>
+				
+				<div class="mySlides gallery-finalrenders-slide fade">
+					<img src="img/mlss/Screen_06.png" style="width:100%" alt="An Unreal Engine Render of the environment showing the misty canal full of weeds, mud, and dirty water leading towar drainage">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-finalrenders')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/mlss/Screen_01.png" onclick="currentSlide(1, 'gallery-finalrenders')" alt="An Unreal Engine Render of the environment showing the murdered victim hanging above the canal wrapped in cloth and a sign displaying their crime of selling rats">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/mlss/Screen_02.png" onclick="currentSlide(2, 'gallery-finalrenders')" alt="An Unreal Engine Render of the environment showing the back alleys of the environment filled with fog and dim light">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/mlss/Screen_03.png" onclick="currentSlide(3, 'gallery-finalrenders')" alt="An Unreal Engine Render of the environment showing the early dawn sky and many stories of tudor style buildings rising over the hanging corpse">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/mlss/Screen_04.png" onclick="currentSlide(4, 'gallery-finalrenders')" alt="An Unreal Engine Render of the environment showing the corpse within the context of the immense medieval tudor structures">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/mlss/Screen_05.png" onclick="currentSlide(5, 'gallery-finalrenders')" alt="An Unreal Engine Render of the environment showing the early dawn sky and many stories of tudor style buildings from a different angle">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/mlss/Screen_06.png" onclick="currentSlide(6, 'gallery-finalrenders')" alt="An Unreal Engine Render of the environment showing the misty canal full of weeds, mud, and dirty water leading toward drainage">
+			</div>
+				<p class="caption-text">Above are my final shots of the environment rendered in Unreal Engine 4.<p>
+			</div>
+		</section>
+		
+		<section class="image-gallery-container" id="gallery-altrenders">
+			<h3 class="centered-header">alternate renders</h3>
+
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-altrenders')">&#10094;</a>
+
+				<div class="mySlides gallery-altrenders-slide fade">
+					<img src="img/mlss/Screen_07.png" style="width:100%" alt="An Unreal Engine Render of the environment showing the back alleys of the environment brightly lit, showing the scene of the crime">
+				</div>
+				
+				<div class="mySlides gallery-altrenders-slide fade">
+					<img src="img/mlss/Screen_08.png" style="width:100%" alt="An Unreal Engine Render of the environment showing the back alleys of the environment brightly lit, showing better the layout of the space">
+				</div>
+				
+				<div class="mySlides gallery-altrenders-slide fade">
+					<img src="img/mlss/Screen_09.png" style="width:100%" alt="An Unreal Engine Render of the environment showing the canal full of weeds, mud, and dirty water leading toward drainage all brightly lit">
+				</div>
+				
+				<div class="mySlides gallery-altrenders-slide fade">
+					<img src="img/mlss/Screen_10.png" style="width:100%" alt="An Unreal Engine Render of the environment showing the bright morning sky and many stories of tudor style buildings">
+				</div>
+				
+				<div class="mySlides gallery-altrenders-slide fade">
+					<img src="img/mlss/Screen_11.png" style="width:100%" alt="An Unreal Engine Render of the environment showing the back alleys of the environment brightly lit, showing the blacksmith's workshop">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-altrenders')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-altrenders-thumb" src="img/mlss/Screen_07.png" onclick="currentSlide(1, 'gallery-altrenders')" alt="An Unreal Engine Render of the environment showing the back alleys of the environment brightly lit, showing the scene of the crime">
+				<img class="thumbnail-indicator demo gallery-altrenders-thumb" src="img/mlss/Screen_08.png" onclick="currentSlide(2, 'gallery-altrenders')" alt="An Unreal Engine Render of the environment showing the back alleys of the environment brightly lit, showing better the layout of the space">
+				<img class="thumbnail-indicator demo gallery-altrenders-thumb" src="img/mlss/Screen_09.png" onclick="currentSlide(3, 'gallery-altrenders')" alt="An Unreal Engine Render of the environment showing the canal full of weeds, mud, and dirty water leading toward drainage all brightly lit">
+				<img class="thumbnail-indicator demo gallery-altrenders-thumb" src="img/mlss/Screen_10.png" onclick="currentSlide(4, 'gallery-altrenders')" alt="An Unreal Engine Render of the environment showing the bright morning sky and many stories of tudor style buildings">
+				<img class="thumbnail-indicator demo gallery-altrenders-thumb" src="img/mlss/Screen_11.png" onclick="currentSlide(5, 'gallery-altrenders')" alt="An Unreal Engine Render of the environment showing the back alleys of the environment brightly lit, showing the blacksmith's workshop">
+			</div>
+				<p class="caption-text">To give a better view of the models, I created an alternate setup depicting the location later in the morning, when the sun has fully risen.<p>
+			</div>
+		</section>
+
+		<section class="image-gallery-container" id="gallery-assetlibrary">
+			<h3 class="centered-header">asset library</h3>
+
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-assetlibrary')">&#10094;</a>
+
+				<div class="mySlides gallery-assetlibrary-slide fade">
+					<img src="img/mlss/Architecture_Props.png" style="width:100%" alt="The asset library used to build the environment's tudor architecture">
+				</div>
+				
+				<div class="mySlides gallery-assetlibrary-slide fade">
+					<img src="img/mlss/Detail_Props_01.png" style="width:100%" alt="The asset library used to add detail, life, and tell the story within the environment">
+				</div>
+				
+				<div class="mySlides gallery-assetlibrary-slide fade">
+					<img src="img/mlss/Detail_Props_02.png" style="width:100%" alt="The asset library used to add detail, life, and tell the story within the environment">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-assetlibrary')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-assetlibrary-thumb" src="img/mlss/Architecture_Props.png" onclick="currentSlide(1, 'gallery-assetlibrary')" alt="The asset library used to build the environment's tudor architecture">
+				<img class="thumbnail-indicator demo gallery-assetlibrary-thumb" src="img/mlss/Detail_Props_01.png" onclick="currentSlide(2, 'gallery-assetlibrary')" alt="he asset library used to add detail, life, and tell the story within the environment">
+				<img class="thumbnail-indicator demo gallery-assetlibrary-thumb" src="img/mlss/Detail_Props_02.png" onclick="currentSlide(2, 'gallery-assetlibrary')" alt="he asset library used to add detail, life, and tell the story within the environment">
+			</div>
+				<p class="caption-text">I constructed my environment out of a modular kit significantly larger and more detailed than Canyon Town, my previous project.<p>
+				<p class="caption-text">No environment is complete without props; they bring the environment to life. These kits focused primarily on selling the time period and telling the story.<p>
+			</div>
+		</section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Kyle Hanselman. Thanks for visiting HanselmanDesign.com!</p>
+        <a href="#top" class="back-to-top">Back To Top</a>
+    </footer>
+
+	<script>
+		// Java script that runs my galleries
+		// An object to store the current slide index for each unique gallery
+		var slideIndexMap = {};
+
+		// Initialize all galleries on page load
+		document.addEventListener("DOMContentLoaded", function() {
+			// Find all unique gallery IDs on the page
+			const galleries = document.querySelectorAll('.image-gallery-container');
+			galleries.forEach(gallery => {
+				const galleryId = gallery.id;
+				// Initialize each gallery's index to 1 (the first slide)
+				slideIndexMap[galleryId] = 1;
+				// Display the first slide for each gallery
+				showSlides(1, galleryId);
+			});
+		});
+
+		// Function to change the slide by a relative amount (n = -1 or 1)
+		function plusSlides(n, galleryId) {
+			showSlides(slideIndexMap[galleryId] += n, galleryId);
+		}
+
+		// Function to jump to a specific slide (n = 1, 2, 3...)
+		function currentSlide(n, galleryId) {
+			showSlides(slideIndexMap[galleryId] = n, galleryId);
+		}
+
+		// Core function to show the correct slide and update the thumbnails
+		function showSlides(n, galleryId) {
+			let i;
+			// Target only the slides/thumbs belonging to the current galleryId
+			let slides = document.querySelectorAll(`.${galleryId}-slide`);
+			let thumbs = document.querySelectorAll(`.${galleryId}-thumb`);
+			
+			if (slides.length === 0) return; // Exit if no slides found
+
+			// Handle cycling (going past the last slide or before the first)
+			if (n > slides.length) {
+				slideIndexMap[galleryId] = 1;
+			}
+			if (n < 1) {
+				slideIndexMap[galleryId] = slides.length;
+			}
+			
+			// Hide all slides
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			
+			// Remove 'active-thumb' class from all thumbnails
+			for (i = 0; i < thumbs.length; i++) {
+				thumbs[i].className = thumbs[i].className.replace(" active-thumb", "");
+			}
+			
+			// Show the current slide and highlight the corresponding thumbnail
+			slides[slideIndexMap[galleryId]-1].style.display = "block";  
+			thumbs[slideIndexMap[galleryId]-1].className += " active-thumb";
+		}
+	</script>
+
+</body>
+</html>

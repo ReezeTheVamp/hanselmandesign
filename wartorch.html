@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYLE HANSELMAN | WAR TORCH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Georama:ital,wght@0,100..900;1,100..900&family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="name-and-logo">
+                <img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo left-logo">
+                <h1 class="site-title">KYLE HANSELMAN</h1>
+                <img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo right-logo">
+            </div>
+            <p class="site-subtitle">Video Game Designer</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="artwork.html">ARTWORK</a></li>
+				<li><a href="writing.html">WRITING</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="portfolio-content">
+
+        <section id="about-content" class="section project-list">
+            <h2 class="centered-header">the war torch</h2>
+
+		<section id="technology-used" class="section">
+			<h3 class="centered-header">technology used</h3>
+			
+			<!-- Adds all software logos to the page -->
+			<div class="logo-row-container">
+				
+				<div class="logo-item">
+					<img src="img/icons/marmoset.svg" alt="Marmoset Logo">
+					<p>Marmoset</p>
+				</div>
+
+				<div class="logo-item">
+					<img src="img/icons/zbrush.svg" alt="Zbrush Logo">
+					<p>Zbrush</p>
+				</div>
+
+				<div class="logo-item">
+					<img src="img/icons/a_substance.svg" alt="Substance Painter Logo">
+					<p>Substance Painter</p>
+				</div>
+
+				<div class="logo-item">
+					<img src="img/icons/blender.svg" alt="Blender Logo">
+					<p>Blender</p>
+				</div>
+				
+				<div class="logo-item">
+					<img src="img/icons/a_photoshop.svg" alt="Photoshop Logo">
+					<p>Adobe Photoshop</p>
+				</div>
+		</section>
+
+
+		<section class="video-container-section">
+			<h3 class="centered-header">final turntable</h3>
+			<div class="video-responsive-wrapper">
+				
+				<iframe width="560" height="315" 
+					src="https://www.youtube.com/embed/XPoureE-0oc?si=vQMdzgt01BFJ-wqf" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen>
+				</iframe>
+			</div>	
+			<p class="caption-text">My goal for this project was to learn Zbrush through humanoid sculpt. Above is the final turntable for the War Torch. I created the mesh and materials and set up the render with camera movements, effects, and lighting.<p>
+			</div>
+		</section>
+
+
+		<section class="image-gallery-container" id="gallery-finalscreenshots">
+			<h3 class="centered-header">final renders</h3>
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-finalscreenshots')">&#10094;</a>
+
+				<div class="mySlides gallery-finalscreenshots-slide fade">
+					<img src="img/wart/WarTorch_Still_01.png" style="width:100%" alt="Render of the War Torch from the front">
+				</div>
+				
+				<div class="mySlides gallery-finalscreenshots-slide fade">
+					<img src="img/wart/WarTorch_Still_02.png" style="width:100%" alt="Render of the War Torch from the back">
+				</div>
+				
+				<div class="mySlides gallery-finalscreenshots-slide fade">
+					<img src="img/wart/WarTorch_Still_03.png" style="width:100%" alt="Render of the War Torch from below">
+				</div>
+				
+				<div class="mySlides gallery-finalscreenshots-slide fade">
+					<img src="img/wart/WarTorch_Still_04.png" style="width:100%" alt="Render of the War Torch from above">
+				</div>				
+
+				<div class="mySlides gallery-finalscreenshots-slide fade">
+					<img src="img/wart/WarTorch_Still_05.png" style="width:100%" alt="Render of the War Torch's torse close up">
+				</div>
+
+				<div class="mySlides gallery-finalscreenshots-slide fade">
+					<img src="img/wart/WarTorch_Still_06.png" style="width:100%" alt="Render of the War Torch's head close up">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-finalscreenshots')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-finalscreenshots-thumb" src="img/wart/WarTorch_Still_01.png" onclick="currentSlide(1, 'gallery-finalscreenshots')" alt="Render of the War Torch from the front">
+				<img class="thumbnail-indicator demo gallery-finalscreenshots-thumb" src="img/wart/WarTorch_Still_02.png" onclick="currentSlide(2, 'gallery-finalscreenshots')" alt="Render of the War Torch from the back">
+				<img class="thumbnail-indicator demo gallery-finalscreenshots-thumb" src="img/wart/WarTorch_Still_03.png" onclick="currentSlide(3, 'gallery-finalscreenshots')" alt="Render of the War Torch from below">
+				<img class="thumbnail-indicator demo gallery-finalscreenshots-thumb" src="img/wart/WarTorch_Still_04.png" onclick="currentSlide(4, 'gallery-finalscreenshots')" alt="Render of the War Torch from above">
+				<img class="thumbnail-indicator demo gallery-finalscreenshots-thumb" src="img/wart/WarTorch_Still_05.png" onclick="currentSlide(5, 'gallery-finalscreenshots')" alt="Render of the War Torch's torse close up">
+				<img class="thumbnail-indicator demo gallery-finalscreenshots-thumb" src="img/wart/WarTorch_Still_06.png" onclick="currentSlide(6, 'gallery-finalscreenshots')" alt="Render of the War Torch's head close up">
+			</div>
+				<p class="caption-text">Above are rendered stills of the final War Torch using Marmoset Toolbag.<p>
+			</div>
+			</section>
+			
+			<section class="pdf-container-section">
+			<h3 class="centered-header">references</h3>
+			
+			<iframe 
+				src="/docs/wart/WarTorch_Reference.pdf" 
+				class="pdf-embed-viewer"
+				frameborder="0" 
+				allowfullscreen>
+			</iframe>
+			
+			</div>
+				<p class="caption-text">SENSITIVITY WARNING: The contents of this PDF contain disturbing images: gore and holocaust victims.<p>
+				<p class="caption-text">I wanted to create an unsettling dark fantasy character, settling on a mobile watchtower. I liked the juxtaposition of a rat-human genetic abomination that was extremely tall. This concept allowed me to gather significant references, presented above.<p>
+			</div>
+			
+			<p class="download-link-wrapper">
+				<a href="/docs/wart/WarTorch_Reference.pdf" target="_blank" class="download-link">
+					Download PDF to View in Full Screen
+				</a>
+			</p>
+		</section>
+		
+		<section class="image-gallery-container" id="gallery-sketches">
+			<h3 class="centered-header">sketches</h3>
+			
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-sketches')">&#10094;</a>
+
+				<div class="mySlides gallery-sketches-slide fade">
+					<img src="img/wart/Sketch_01.jpg" style="width:100%" alt="War Torch Front Sketch">
+				</div>
+				
+				<div class="mySlides gallery-sketches-slide fade">
+					<img src="img/wart/Sketch_02.jpg" style="width:100%" alt="War Torch Side Sketch">
+				</div>
+				
+				<div class="mySlides gallery-sketches-slide fade">
+					<img src="img/wart/Sketch_03.jpg" style="width:100%" alt="War Torch Back Sketch">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-sketches')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-sketches-thumb" src="img/wart/Sketch_01.jpg" onclick="currentSlide(1, 'gallery-sketches')" alt="War Torch Front Sketch">
+				<img class="thumbnail-indicator demo gallery-sketches-thumb" src="img/wart/Sketch_02.jpg" onclick="currentSlide(2, 'gallery-sketches')" alt="War Torch Side Sketch">
+				<img class="thumbnail-indicator demo gallery-sketches-thumb" src="img/wart/Sketch_03.jpg" onclick="currentSlide(3, 'gallery-sketches')" alt="War Torch Back Sketch">
+			</div>
+				<p class="caption-text">In my typical fashion, after gathering references, I opened my sketchbook and started creating some basic, rough sketches that I would be able to work from later down the line.<p>
+			</div>
+		</section>
+		
+		<section class="image-gallery-container" id="gallery-sculptprogress">
+			<h3 class="centered-header">sculpt progress</h3>
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-sculptprogress')">&#10094;</a>
+
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_01.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 1">
+				</div>
+				
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_02.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 2">
+				</div>
+				
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_03.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 3">
+				</div>
+				
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_04.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 4">
+				</div>				
+
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_05.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 5">
+				</div>
+
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_06.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 6">
+				</div>
+				
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_07.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 7">
+				</div>
+				
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_08.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 8">
+				</div>
+				
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_09.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 9">
+				</div>
+				
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_10.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 10">
+				</div>
+				
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_11.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 11">
+				</div>
+				
+				<div class="mySlides gallery-sculptprogress-slide fade">
+					<img src="img/wart/Progress_12.jpg" style="width:100%" alt="War Torch Zbrush sculpt progress step 12">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-sculptprogress')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_01.jpg" onclick="currentSlide(1, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 1">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_02.jpg" onclick="currentSlide(2, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 2">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_03.jpg" onclick="currentSlide(3, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 3">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_04.jpg" onclick="currentSlide(4, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 4">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_05.jpg" onclick="currentSlide(5, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 5">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_06.jpg" onclick="currentSlide(6, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 6">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_07.jpg" onclick="currentSlide(7, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 7">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_08.jpg" onclick="currentSlide(8, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 8">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_09.jpg" onclick="currentSlide(9, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 9">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_10.jpg" onclick="currentSlide(10, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 10">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_11.jpg" onclick="currentSlide(11, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 11">
+				<img class="thumbnail-indicator demo gallery-sculptprogress-thumb" src="img/wart/Progress_12.jpg" onclick="currentSlide(12, 'gallery-sculptprogress')" alt="War Torch Zbrush sculpt progress step 12">
+
+			</div>
+				<p class="caption-text">Above is a series of images showing the progress of the War Torch's sculpt.<p>
+			</div>
+			</section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Kyle Hanselman. Thanks for visiting HanselmanDesign.com!</p>
+        <a href="#top" class="back-to-top">Back To Top</a>
+    </footer>
+
+	<script>
+		// Java script that runs my galleries
+		// An object to store the current slide index for each unique gallery
+		var slideIndexMap = {};
+
+		// Initialize all galleries on page load
+		document.addEventListener("DOMContentLoaded", function() {
+			// Find all unique gallery IDs on the page
+			const galleries = document.querySelectorAll('.image-gallery-container');
+			galleries.forEach(gallery => {
+				const galleryId = gallery.id;
+				// Initialize each gallery's index to 1 (the first slide)
+				slideIndexMap[galleryId] = 1;
+				// Display the first slide for each gallery
+				showSlides(1, galleryId);
+			});
+		});
+
+		// Function to change the slide by a relative amount (n = -1 or 1)
+		function plusSlides(n, galleryId) {
+			showSlides(slideIndexMap[galleryId] += n, galleryId);
+		}
+
+		// Function to jump to a specific slide (n = 1, 2, 3...)
+		function currentSlide(n, galleryId) {
+			showSlides(slideIndexMap[galleryId] = n, galleryId);
+		}
+
+		// Core function to show the correct slide and update the thumbnails
+		function showSlides(n, galleryId) {
+			let i;
+			// Target only the slides/thumbs belonging to the current galleryId
+			let slides = document.querySelectorAll(`.${galleryId}-slide`);
+			let thumbs = document.querySelectorAll(`.${galleryId}-thumb`);
+			
+			if (slides.length === 0) return; // Exit if no slides found
+
+			// Handle cycling (going past the last slide or before the first)
+			if (n > slides.length) {
+				slideIndexMap[galleryId] = 1;
+			}
+			if (n < 1) {
+				slideIndexMap[galleryId] = slides.length;
+			}
+			
+			// Hide all slides
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			
+			// Remove 'active-thumb' class from all thumbnails
+			for (i = 0; i < thumbs.length; i++) {
+				thumbs[i].className = thumbs[i].className.replace(" active-thumb", "");
+			}
+			
+			// Show the current slide and highlight the corresponding thumbnail
+			slides[slideIndexMap[galleryId]-1].style.display = "block";  
+			thumbs[slideIndexMap[galleryId]-1].className += " active-thumb";
+		}
+	</script>
+
+</body>
+</html>

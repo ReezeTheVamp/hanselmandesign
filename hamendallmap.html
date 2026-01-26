@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYLE HANSELMAN | HAMENDALL MAP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Georama:ital,wght@0,100..900;1,100..900&family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="name-and-logo">
+                <img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo left-logo">
+                <h1 class="site-title">KYLE HANSELMAN</h1>
+                <img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo right-logo">
+            </div>
+            <p class="site-subtitle">Video Game Designer</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="artwork.html">ARTWORK</a></li>
+				<li><a href="writing.html">WRITING</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="portfolio-content">
+
+        <section id="about-content" class="section project-list">
+            <h2 class="centered-header">hamendall world map</h2>
+
+		<section id="technology-used" class="section">
+			<h3 class="centered-header">technology used</h3>
+			
+			<!-- Adds all software logos to the page -->
+			<div class="logo-row-container">
+				
+				<div class="logo-item">
+					<img src="img/icons/inkarnate.svg" alt="Unreal Engine Logo">
+					<p>Inkarnate</p>
+				</div>
+
+				<div class="logo-item">
+					<img src="img/icons/a_photoshop.svg" alt="Photoshop Logo">
+					<p>Adobe Photoshop</p>
+				</div>
+		</section>
+
+
+		<section class="section standalone-image-section">
+			<h3 class="centered-header">final map</h3>
+			<div class="image-wrapper">
+				<img src="img/hmdll/Hamendall_Map_4K.jpg" alt="The final 4K resolution map of the world of Hamendall featured in the novel Cities Above the Clouds" class="centered-image">
+        
+				<p class="caption-text">This is the final product of the process seen below. As a wasteland, Hamendall lacks the ecological diversity of other similar planets, like Earth, but maintains complex and interesting geography and climates. I'm pretty proud of the amount of detail I managed to pack into this map and even more proud of the worldbuilding it opened the door for.<p>
+			</div>
+		</section>
+
+		<section class="image-gallery-container" id="gallery-drawings">
+			<div class="gallery-title-wrapper">
+				<h3>original drawings</h3>
+			</div>
+
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-drawings')">&#10094;</a>
+
+				<div class="mySlides gallery-drawings-slide fade">
+					<img src="img/hmdll/Drawing_01.jpg" style="width:100%" alt="A hand drawn and inked map of hamendall">
+				</div>
+				
+				<div class="mySlides gallery-drawings-slide fade">
+					<img src="img/hmdll/Drawing_02.png" style="width:100%" alt="The hand drawn map of hamendall refined a prepped for details in adobe photoshop">
+				</div>
+				
+				<div class="mySlides gallery-drawings-slide fade">
+					<img src="img/hmdll/Drawing_03.png" style="width:100%" alt="A hand drawn map of hamendall digitally colored for various regions with some region and geography labels">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-drawings')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-drawings-thumb" src="img/hmdll/Drawing_01.jpg" onclick="currentSlide(1, 'gallery-drawings')" alt="A hand drawn and inked map of hamendall">
+				<img class="thumbnail-indicator demo gallery-drawings-thumb" src="img/hmdll/Drawing_02.png" onclick="currentSlide(2, 'gallery-drawings')" alt="The hand drawn map of hamendall refined a prepped for details in adobe photoshop">
+				<img class="thumbnail-indicator demo gallery-drawings-thumb" src="img/hmdll/Drawing_03.png" onclick="currentSlide(3, 'gallery-drawings')" alt="A hand drawn map of hamendall digitally colored for various regions with some region and geography labels">
+			</div>
+				<p class="caption-text">My first attempt at creating a map for Hamendall was to draw one by hand. This went reasonably well overall and I liked the shape of the landmasses I created. Unfortunately, this wasn't very flexible.<p>
+				<p class="caption-text">When I moved the map into Photoshop, I struggled to make the necessary adjustments to accommodate lore changes. I needed a more powerful tool for this work. You will see I kept this general shape over time, but refined it significantly.<p>
+			</div>
+		</section>
+		
+		
+		<section class="image-gallery-container" id="gallery-tectonics">
+			<div class="gallery-title-wrapper">
+				<h3>inkarnate and plate tectonics</h3>
+			</div>
+
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-tectonics')">&#10094;</a>
+
+				<div class="mySlides gallery-tectonics-slide fade">
+					<img src="img/hmdll/BasicGeologic.jpg" style="width:100%" alt="A basic layout of hamendall's landmasses and oceans made in inkarnate">
+				</div>
+				
+				<div class="mySlides gallery-tectonics-slide fade">
+					<img src="img/hmdll/PlateTectonics.png" style="width:100%" alt="A demonstration of Hamendall's tectonic plates, where they are divided and their movement direction to inform geography">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-tectonics')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-tectonics-thumb" src="img/hmdll/BasicGeologic.jpg" onclick="currentSlide(1, 'gallery-tectonics')" alt="A basic layout of hamendall's landmasses and oceans made in inkarnate">
+				<img class="thumbnail-indicator demo gallery-tectonics-thumb" src="img/hmdll/PlateTectonics.png" onclick="currentSlide(2, 'gallery-tectonics')" alt="A demonstration of Hamendall's tectonic plates, where they are divided and their movement direction to inform geography">
+			</div>
+				<p class="caption-text">I discovered Inkarnate thanks to some Pathfinder work I was also doing. This powerful tool gave me the freedom to focus on making a beautiful map instead of the tedium of layers and making my own art.<p>
+				<p class="caption-text">I drew out my landmasses in roughly the same shape as the original with some modifications, such as a second continent. Then, I created a map for the plate tectonics to inform the rest of my geography, ensuring major features matched existing lore.<p>
+			</div>
+		</section>
+		
+		
+		<section class="image-gallery-container" id="gallery-climate">
+			<div class="gallery-title-wrapper">
+				<h3>refining landmasses and climate</h3>
+			</div>
+
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-climate')">&#10094;</a>
+
+				<div class="mySlides gallery-climate-slide fade">
+					<img src="img/hmdll/Hamendall_Map_ContinentalShelf.jpg" style="width:100%" alt="An image of hamendall's map displaying its complex shorlines and the continental shelf, which informed the ocean current map">
+				</div>
+				
+				<div class="mySlides gallery-climate-slide fade">
+					<img src="img/hmdll/Hamendall_Map_WindAndCurrents.png" style="width:100%" alt="An image of hamendall's map displaying its primary ocean currents, which informed the climate zones map">
+				</div>
+				
+				<div class="mySlides gallery-climate-slide fade">
+					<img src="img/hmdll/Hamendall_Map_Climates.jpg" style="width:100%" alt="An image of hamendall's map displaying its climate zones using the Koppen climate classifications">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-climate')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-climate-thumb" src="img/hmdll/Hamendall_Map_ContinentalShelf.jpg" onclick="currentSlide(1, 'gallery-climate')" alt="An image of hamendall's map displaying its complex shorlines and the continental shelf, which informed the ocean current map">
+				<img class="thumbnail-indicator demo gallery-climate-thumb" src="img/hmdll/Hamendall_Map_WindAndCurrents.png" onclick="currentSlide(2, 'gallery-climate')" alt="An image of hamendall's map displaying its primary ocean currents, which informed the climate zones map">
+				<img class="thumbnail-indicator demo gallery-climate-thumb" src="img/hmdll/Hamendall_Map_Climates.jpg" onclick="currentSlide(3, 'gallery-climate')" alt="An image of hamendall's map displaying its climate zones using the Koppen climate classifications">
+			</div>
+				<p class="caption-text">I began to refine the geography using the plate tectonics as reference. I decided where mountains would be, rivers would flow, lakes would pool, and so on. I added a huge amount of detail to the coasts with islands, believable erosion, and a continental shelf.<p>
+				<p class="caption-text">Afterward, with the help of hours of research, I created a realistic ocean current map which informed the climate map. This detailed climate map has become invaluable to ongoing worldbuilding.<p>
+			</div>
+		</section>
+		
+		
+		<section class="image-gallery-container" id="gallery-final">
+			<div class="gallery-title-wrapper">
+				<h3>final touches</h3>
+			</div>
+
+			<div class="slideshow-viewport">
+				
+				<a class="prev" onclick="plusSlides(-1, 'gallery-final')">&#10094;</a>
+
+				<div class="mySlides gallery-final-slide fade">
+					<img src="img/hmdll/Hamendall_Map_Basic.jpg" style="width:100%" alt="An image of hamendall's map displaying its various riverways, mountains, and continent titles alongside some frame artwork">
+				</div>
+				
+				<div class="mySlides gallery-final-slide fade">
+					<img src="img/hmdll/PlateTectonics_Geography.png" style="width:100%" alt="An image of hamendall's map displaying its various riverways, mountains, and continent titles alongside some frame artwork overlayed with the tectnoic plates map">
+				</div>
+
+				<a class="next" onclick="plusSlides(1, 'gallery-final')">&#10095;</a>
+			</div>
+
+			<div class="thumbnail-row">
+				<img class="thumbnail-indicator demo gallery-final-thumb" src="img/hmdll/Hamendall_Map_Basic.jpg" onclick="currentSlide(1, 'gallery-final')" alt="An image of hamendall's map displaying its various riverways, mountains, and continent titles alongside some frame artwork">
+				<img class="thumbnail-indicator demo gallery-final-thumb" src="img/hmdll/PlateTectonics_Geography.png" onclick="currentSlide(2, 'gallery-final')" alt="An image of hamendall's map displaying its various riverways, mountains, and continent titles alongside some frame artwork overlayed with the tectnoic plates map">
+			</div>
+				<p class="caption-text">With the landmasses and climates locked in, I got to work on my major features such as mountains. I then painted in my distinct climate zones, keeping the colors varied enough to be interesting, but subtle enough to maintain the old-world aesthetic I was going for.<p>
+				<p class="caption-text">I double checked this against the plate tectonics to ensure it was all still feasible, then I finished out the map with detailed vegetation and atmospherics. I finally created custom city icons to match the world of Hamendall and placed them to finish the map off.<p>
+			</div>
+		</section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Kyle Hanselman. Thanks for visiting HanselmanDesign.com!</p>
+        <a href="#top" class="back-to-top">Back To Top</a>
+    </footer>
+
+	<script>
+		// Java script that runs my galleries
+		// An object to store the current slide index for each unique gallery
+		var slideIndexMap = {};
+
+		// Initialize all galleries on page load
+		document.addEventListener("DOMContentLoaded", function() {
+			// Find all unique gallery IDs on the page
+			const galleries = document.querySelectorAll('.image-gallery-container');
+			galleries.forEach(gallery => {
+				const galleryId = gallery.id;
+				// Initialize each gallery's index to 1 (the first slide)
+				slideIndexMap[galleryId] = 1;
+				// Display the first slide for each gallery
+				showSlides(1, galleryId);
+			});
+		});
+
+		// Function to change the slide by a relative amount (n = -1 or 1)
+		function plusSlides(n, galleryId) {
+			showSlides(slideIndexMap[galleryId] += n, galleryId);
+		}
+
+		// Function to jump to a specific slide (n = 1, 2, 3...)
+		function currentSlide(n, galleryId) {
+			showSlides(slideIndexMap[galleryId] = n, galleryId);
+		}
+
+		// Core function to show the correct slide and update the thumbnails
+		function showSlides(n, galleryId) {
+			let i;
+			// Target only the slides/thumbs belonging to the current galleryId
+			let slides = document.querySelectorAll(`.${galleryId}-slide`);
+			let thumbs = document.querySelectorAll(`.${galleryId}-thumb`);
+			
+			if (slides.length === 0) return; // Exit if no slides found
+
+			// Handle cycling (going past the last slide or before the first)
+			if (n > slides.length) {
+				slideIndexMap[galleryId] = 1;
+			}
+			if (n < 1) {
+				slideIndexMap[galleryId] = slides.length;
+			}
+			
+			// Hide all slides
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			
+			// Remove 'active-thumb' class from all thumbnails
+			for (i = 0; i < thumbs.length; i++) {
+				thumbs[i].className = thumbs[i].className.replace(" active-thumb", "");
+			}
+			
+			// Show the current slide and highlight the corresponding thumbnail
+			slides[slideIndexMap[galleryId]-1].style.display = "block";  
+			thumbs[slideIndexMap[galleryId]-1].className += " active-thumb";
+		}
+	</script>
+
+</body>
+</html>

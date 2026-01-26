@@ -1,0 +1,637 @@
+/* --- 1. RESET AND BASE STYLES --- */
+:root {
+    /* Define the specific brand color palette */
+    --color-primary-bg: #474C4F;
+    --color-clickable: #D86D32;
+    --color-detail: #C9C9C9;
+	--color-banner: #bf0000;
+    --color-white: #ffffff;
+	--color-black: #000000;
+    
+    /* Google Fonts */
+    --font-header: 'Black Ops One', impact, sans-serif;
+    --font-section-title: 'Georama', Arial, sans-serif;
+    --font-body: 'Gudea', Arial, sans-serif;
+    
+	/* Spacing Variable */
+    --spacing-large: 40px;
+    --spacing-medium: 20px;
+    --spacing-small: 10px;
+    --max-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Applying Gudea to the body text */
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--color-detail);
+    background-color: var(--color-primary-bg);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Adds side gradients */
+    background: 
+        linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%),
+        linear-gradient(to left, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%);
+    z-index: -1; 
+    pointer-events: none;
+}
+
+/* Applying Black Ops One to the main page headers (h1, h2) */
+h1, h2 {
+    font-family: var(--font-header);
+    margin-bottom: var(--spacing-medium);
+    font-weight: normal;
+    color: var(--color-white);
+    text-transform: uppercase;
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Applying Georama to the project titles (h3) */
+h3 {
+    font-family: var(--font-section-title);
+    margin-top: var(--spacing-medium);
+	margin-bottom: var(--spacing-small);
+    font-weight: 600;
+    color: var(--color-white);
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/* --- HEADER AND NAVIGATION --- */
+.site-header {
+    color: var(--color-white);
+    padding: var(--spacing-small) 0;
+    text-align: center;
+    border-bottom: 1px solid var(--color-detail);
+}
+
+.header-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-medium);
+}
+
+/* Container for the name and logos */
+.name-and-logo {
+    display: flex;             /* Enable flexbox */
+    align-items: center;       /* Vertically centers the logo with the text */
+    justify-content: center;   /* Centers the entire group horizontally */
+    gap: 5%;                   /* Adds space between the logo and the text */
+}
+
+/* Scales the header Logos */
+.header-logo {
+    height: 10em;
+	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+/* Settings for Kyle Hanselman site title */
+.site-title {
+    font-size: 3.5em;
+    letter-spacing: 4px;
+	margin: 0;
+}
+
+/* Settings for section titles */
+.section h2 {
+    font-size: 2.2em;
+    padding-top: 0 var(--spacing-small);
+	width: fit-content;
+	margin: 0 auto var(--spacing-small) auto;
+    margin-bottom: var(--spacing-small);
+}	
+.site-subtitle {
+    font-family: var(--font-body);
+    font-size: 2.0em;
+    margin: 0;
+    color: var(--color-detail);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-small) 0;
+}
+
+.main-nav li {
+    margin: 0 var(--spacing-medium);
+}
+
+/* Apply Black Ops One to nav links */
+.main-nav a {
+    font-family: var(--font-header);
+    color: var(--color-clickable);
+    text-transform: uppercase;
+    font-weight: normal;
+    display: block;
+    border-bottom: 2px solid transparent;
+	font-size: 1.7em;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--color-detail);
+	text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/* --- PORTFOLIO SECTIONS --- */
+.portfolio-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-large);
+}
+
+.section {
+    margin-bottom: var(--spacing-small);
+}
+
+.caption-text {
+/* Breathing room above captions */
+    margin-top: var(--spacing-medium); 
+
+/* Centers captions */
+    max-width: var(--max-width);
+    margin-left: 0 auto;
+	margin-right: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+/* --- PROJECT CARDS --- */
+.project-card {
+/* Base styles for the entire clickable project card */
+    display: flex;
+    background-color: var(--color-primary-bg);
+	margin-bottom: var(--spacing-large);
+    padding: var(--spacing-medium);
+    
+/* Border Styling with hard corners */
+	border: 3px solid var(--color-clickable);
+	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+	transition: background-color 1.0s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    
+/* Text Styling */
+	text-decoration: none; /* Resets all text formatting */
+    color: var(--color-detail);
+    
+	
+ /* Stacks image and details on mobile */
+	flex-direction: column;
+}
+
+/* Hover effect for the project card */
+.project-card:hover {
+    background-color: #555c5f;
+    border-color: var(--color-detail);
+    cursor: pointer;
+	box-shadow: 15px 30px 20px rgba(0, 0, 0, .5);
+}
+
+.project-image img {
+    width: 100%;
+    height: 250px;
+    display: block;
+	object-fit: cover;
+	margin-bottom: var(--spacing-medium);
+	position: relative;
+	overflow: hidden;
+
+/* Image styling with hard corners */
+    border: 1px solid var(--color-black);
+	border-radius: 0;
+}
+
+.project-image-scaling img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: var(--spacing-medium);
+	position: relative;
+	overflow: hidden;
+	
+/* Image styling with hard corners */
+    border: 1px solid var(--color-black);
+	border-radius: 0;
+}
+
+.project-tagline {
+    color: var(--color-detail); 
+    font-style: italic;
+    margin-bottom: var(--spacing-small);
+	text-align: center;
+}
+
+.status-banner {
+    position: absolute;
+    top: 63px;
+    right: -70px;
+    background-color: var(--color-banner);
+    color: var(--color-white);
+    padding: 5px 40px;
+    font-family: var(--font-header);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transform: rotate(45deg);
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    pointer-events: none; /* Allows clicks to pass through if needed */
+	opacity: 1 !important; /* Forces full opacity */
+    filter: none !important; /* Forces filterless */
+}
+
+.project-card.coming-soon {
+    cursor: default; /* Removes the pointer finger */
+    filter: grayscale(75%);
+}
+
+.coming-soon .project-image, 
+.coming-soon .project-details {
+    filter: grayscale(100%);
+}
+
+.project-card.coming-soon:hover {
+    background-color: var(--color-primary-bg);
+    border-color: var(--color-clickable);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Desktop Layout for Project Card */
+@media (min-width: 768px) {
+    .project-card {
+        flex-direction: row; /* Side-by-side layout on desktop */
+        gap: var(--spacing-large);
+    }
+
+    /* Image takes exactly half the width */
+    .project-image,
+	.project-image-scaling {
+        flex-basis: 50%; 
+        min-width: unset; /* Remove previous min-width */
+    }
+    
+	/* Details take up the other half */
+    .project-details {
+        flex-basis: 50%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+		text-align: center;
+    }
+
+    .project-image img {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+/* --- SOFTWARE LOGO ROW STYLES --- */
+
+.logo-row-container {
+    /* Center the entire row horizontally */
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start; /* Aligns items to the top (important for text placement) */
+    
+    /* Ensure the logos never wrap onto a new line, but shrink to fit */
+    flex-wrap: nowrap;
+    
+    /* Use a maximum width so the logos don't get too large on big screens */
+    max-width: var(--max-width); 
+    margin: 0 auto var(--spacing-small) auto; /* Center with margin below */
+    padding: 0 var(--spacing-small);
+}
+
+.logo-item {
+    /* Each logo gets equal space and is centered vertically */
+    flex: 1 1 100px; /* Grow (1), Shrink (1), Minimum width of 100px */
+    text-align: center;
+    padding: var(--spacing-small);
+}
+
+.logo-item img {
+    /* Force the image size to stay consistent and relative */
+    height: 60px; /* Set a fixed height for consistency */
+    width: auto;
+    object-fit: contain; /* Ensures the logo scales correctly without stretching */
+    transition: filter 0.3s ease;
+}
+
+.logo-item p {
+    font-size: 0.9em;
+    font-family: var(--font-body);
+    color: var(--color-detail);
+    line-height: 1; /* Keep the text compact */
+}
+
+/* Media Query for smaller screens (like phones) */
+@media (max-width: 768px) {
+    .logo-row-container {
+        /* Allow wrapping on small screens to prevent logos from getting too tiny */
+        flex-wrap: wrap; 
+    }
+    .logo-item {
+        /* Give each item a consistent 25% width on small screens (4 per row) */
+        flex: 0 0 25%; 
+        min-width: 80px; 
+    }
+    .logo-item img {
+        height: 40px; 
+    }
+}
+
+
+
+
+/* --- PROJECT PAGE GALLERY --- */
+
+.image-gallery-container {
+/* Limit the max size of the gallery */
+	max-width: var(--max-width);
+    margin: var(--spacing-small) auto;
+    position: relative;
+    padding: var(--spacing-small);
+}
+
+.slideshow-viewport {
+    position: relative;
+    margin: auto;
+    border: 1px solid var(--color-black);
+	height: 550px; 
+    background-color: var(--color-black);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+	
+	/* Center the images in viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Hide the slides by default (JavaScript will show the active one) */
+.mySlides {
+    display: none;
+	height: 100%;
+    width: 100%;
+}
+
+.mySlides img {
+    vertical-align: middle;
+	
+	/* Forces image to fill the box */
+	width: 100%;
+    height: 100%;
+	object-fit: contain; 
+    vertical-align: middle;
+}
+
+/* Arrow buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--color-clickable);
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 10;
+}
+
+.prev {
+    left: 0;
+}
+
+/* Position the arrow buttons */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, highlight color */
+.prev:hover, .next:hover {
+    color: var(--color-detail);
+}
+
+/* Thumbnails */
+.thumbnail-row {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+	flex-wrap: nowrap;
+	user-select: none;
+    margin-top: var(--spacing-small);
+    gap: var(--spacing-small);
+}
+
+.thumbnail-indicator {
+    opacity: 0.5;
+    cursor: pointer;
+    flex: 1 1 50px;
+	width: auto;
+	max-width: 89px;
+	height: 50px;
+	border: 1px solid var(--color-clickable);
+    transition: border-color 0.3s ease, opacity 0.3s ease;
+}
+
+.thumbnail-indicator:hover {
+	border-color: var(--color-deatil);
+	opacity: 0.8;
+}
+
+/* The active/current thumbnail */
+.active-thumb {
+    opacity: 1;
+	box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+    border-color: var(--color-deatil) !important;
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black for legibility */
+    color: var(--color-white);
+    padding: var(--spacing-small);
+    font-size: 0.95em;
+    text-align: center;
+    font-family: var(--font-body);
+}
+
+@media (max-width: 768px) {
+    .slideshow-viewport {
+        height: 350px; /* Make the gallery shorter on mobile */
+	}
+}
+
+
+
+
+
+/* --- YOUTUBE VIDEO STYLES (16:9 Aspect Ratio) --- */
+
+.video-container-section {
+    /* Center the video section on the page */
+    max-width: var(--max-width);
+    margin: var(--spacing-medium);
+	padding: var (--spacing-medium);
+    text-align: center;
+}
+
+.video-responsive-wrapper {
+    /* Use the same max width as your portfolio content */
+    max-width: 100%; 
+    margin: 0 auto;
+    
+    /* 1. Establish a container for relative positioning */
+    position: relative; 
+    
+    /* 2. Create the 16:9 aspect ratio (height is 56.25% of the width) */
+    padding-bottom: 56.25%; 
+    overflow: hidden;
+}
+
+.video-responsive-wrapper iframe {
+    /* Make the iframe fill the container established by padding-bottom */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* --- PDF EMBED STYLES --- */
+
+.pdf-container-section {
+    /* Center the section and give it consistent top/bottom spacing */
+    max-width: var(--max-width);
+    margin: var(--spacing-small) auto;
+    padding: var(--spacing-small);
+}
+
+.pdf-embed-viewer {
+    /* The viewer needs a fixed size to display correctly */
+    width: 100%;
+    height: 700px; 
+    
+	/* Ensures it acts like a block element */
+    display: block;
+    margin: var(--spacing-small) auto;
+    border: 1px solid var(--color-black);
+}
+
+.download-link-wrapper {
+    text-align: center;
+    margin-top: var(--spacing-small);
+}
+
+.download-link {
+    /* Style the download link */
+    color: var(--color-clickable);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.download-link:hover {
+    color: var(--color-detail);
+	transition: color 0.3s ease;
+}
+
+/* Media Query for smaller screens (reduce the height of the viewer) */
+@media (max-width: 768px) {
+    .pdf-embed-viewer {
+        height: 500px; /* Make it shorter on mobile */
+    }
+}
+
+
+
+
+
+/* --- STANDALONE IMAGE STYLES --- */
+
+.standalone-image-section {
+    /* Centers the section itself on the page */
+    max-width: var(--max-width); 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.image-wrapper {
+    padding: var(--spacing-small) 0;
+}
+
+.centered-image {
+    /* Centers the image*/
+    display: block; 
+    margin: 0 auto; 
+    
+    /* Visually responsive and consistent */
+    max-width: 100%; 
+    height: auto;
+    border: 1px solid var(--color-black);
+}
+
+
+
+
+/* --- FOOTER --- */
+.site-footer {
+    text-align: center;
+    padding: var(--spacing-medium) 0;
+    color: var(--color-detail);
+    font-size: 0.9em;
+    border-top: 1px solid var(--color-detail);
+}
+
+.site-footer a {
+    color: var(--color-clickable);
+    margin-left: var(--spacing-small);
+	transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: var(--color-detail);
+}
