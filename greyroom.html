@@ -1,132 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KYLE HANSELMAN | GREY ROOM</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KYLE HANSELMAN | GREY ROOM</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="img/Logo_Gear_Favicon.png" type="image/x-icon">
 
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Georama:ital,wght@0,100..900;1,100..900&family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Georama:ital,wght@0,100..900;1,100..900&family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <div class="header-content">
-            <div class="name-and-logo">
-                <img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo left-logo">
-                <h1 class="site-title">KYLE HANSELMAN</h1>
-                <img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo right-logo">
-            </div>
-            <p class="site-subtitle">Video Game Designer</p>
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="about.html">ABOUT ME</a></li>
-                <li><a href="design.html">DESIGN</a></li>
-                <li><a href="artwork.html">ARTWORK</a></li>
+	<header class="site-header">
+		<div class="header-content">
+			<div class="name-and-logo">
+				<img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo left-logo">
+				<h1 class="site-title">KYLE HANSELMAN</h1>
+				<img src="img/icons/Logo_Gear.svg" alt="Hanselman Design Logo Gear" class="header-logo right-logo">
+			</div>
+				<p class="site-subtitle">Video Game Designer</p>
+			</div>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="about.html">ABOUT ME</a></li>
+				<li><a href="design.html">DESIGN</a></li>
+				<li><a href="artwork.html">ARTWORK</a></li>
 				<li><a href="writing.html">WRITING</a></li>
-            </ul>
-        </nav>
-    </header>
+			</ul>
+		</nav>
+	</header>
 
-    <main class="portfolio-content">
 
-        <section id="about-content" class="section project-list">
-            <h2 class="centered-header">grey room</h2>
+
+	<main class="portfolio-content">
+
+		<section id="about-content" class="section project-list">
+			<h2 class="centered-header">grey room</h2>
 
 		<section id="technology-used" class="section">
 			<h3 class="centered-header">technology used</h3>
-			
-			<!-- Adds all software logos to the page -->
 			<div class="logo-row-container">
-				
-				<div class="logo-item">
-					<img src="img/icons/unreal.svg" alt="Unreal Engine Logo">
-					<p>Unreal Engine</p>
-				</div>
-
-				<div class="logo-item">
-					<img src="img/icons/ad_maya.svg" alt="Autodesk Maya Logo">
-					<p>Autodesk Maya</p>
-				</div>
-
-				<div class="logo-item">
-					<img src="img/icons/a_substance.svg" alt="Substance Painter Logo">
-					<p>Substance Painter</p>
-				</div>
-				
-				<div class="logo-item">
-					<img src="img/icons/a_photoshop.svg" alt="Photoshop Logo">
-					<p>Adobe Photoshop</p>
-				</div>
+				<div class="logo-item"><img src="img/icons/unreal.svg" alt="Unreal Engine Logo"><p>Unreal Engine</p></div>
+				<div class="logo-item"><img src="img/icons/ad_maya.svg" alt="Autodesk Maya Logo"><p>Autodesk Maya</p></div>
+				<div class="logo-item"><img src="img/icons/a_substance.svg" alt="Substance Painter Logo"><p>Substance Painter</p></div>
+				<div class="logo-item"><img src="img/icons/a_photoshop.svg" alt="Photoshop Logo"><p>Adobe Photoshop</p></div>
 		</section>
+
 
 
 		<section class="video-container-section">
 			<h3 class="centered-header">Final Presentation</h3>
 			<div class="video-responsive-wrapper">
-				
 				<iframe width="560" height="315" 
-					src="https://www.youtube.com/embed/s8096AsT60Y?si=gqJRwVh8qNVEoTEB" 
-					title="YouTube video player" 
-					frameborder="0" 
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-					allowfullscreen>
+					src="https://www.youtube.com/embed/s8096AsT60Y?si=gqJRwVh8qNVEoTEB" title="YouTube video player" frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 				</iframe>
 			</div>	
-			<p class="caption-text">This project aimed to create a photo-realistic living space using the Unreal Engine. For the final presentation of the space, I created meshes, materials, and lighting except for the wall paintings, which were sourced from free stock image sites.<p>
+				<p class="caption-text">This project aimed to create a photo-realistic living space using the Unreal Engine. For the final presentation of the space, I created meshes and materials except for the wall paintings, which were sourced from free stock image sites. I also lit the space and set up post processing.</p>
 			</div>
 		</section>
+
 
 
 		<section class="image-gallery-container" id="gallery-finalrenders">
 			<div class="gallery-title-wrapper">
 				<h3>Final Renders</h3>
 			</div>
-
 			<div class="slideshow-viewport">
-				
 				<a class="prev" onclick="plusSlides(-1, 'gallery-finalrenders')">&#10094;</a>
-
-				<div class="mySlides gallery-finalrenders-slide fade">
-					<img src="img/gr/Screen_01.png" style="width:100%" alt="Reference Angle Match">
-				</div>
-				
-				<div class="mySlides gallery-finalrenders-slide fade">
-					<img src="img/gr/Screen_02.png" style="width:100%" alt="Couch View">
-				</div>
-				
-				<div class="mySlides gallery-finalrenders-slide fade">
-					<img src="img/gr/Screen_03.png" style="width:100%" alt="Corner View">
-				</div>
-
+				<div class="mySlides gallery-finalrenders-slide fade"><img src="img/gr/Screen_01.png" alt="An Unreal Engine render of a modern room with wooden floors, concrete walls, and a grey couch."></div>
+				<div class="mySlides gallery-finalrenders-slide fade"><img src="img/gr/Screen_02.png" alt="An Unreal Engine render of a modern room with wooden floors, concrete walls, and a grey couch."></div>
+				<div class="mySlides gallery-finalrenders-slide fade"><img src="img/gr/Screen_03.png" alt="An Unreal Engine render of a modern room with wooden floors, concrete walls, and a grey couch."></div>
 				<a class="next" onclick="plusSlides(1, 'gallery-finalrenders')">&#10095;</a>
 			</div>
-
 			<div class="thumbnail-row">
-				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/gr/Screen_01.png" onclick="currentSlide(1, 'gallery-finalrenders')" alt="Reference Angle Match">
-				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/gr/Screen_02.png" onclick="currentSlide(2, 'gallery-finalrenders')" alt="Couch View">
-				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/gr/Screen_03.png" onclick="currentSlide(3, 'gallery-finalrenders')" alt="Corner View">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/gr/Screen_01.png" onclick="currentSlide(1, 'gallery-finalrenders')">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/gr/Screen_02.png" onclick="currentSlide(2, 'gallery-finalrenders')">
+				<img class="thumbnail-indicator demo gallery-finalrenders-thumb" src="img/gr/Screen_03.png" onclick="currentSlide(3, 'gallery-finalrenders')">
 			</div>
-				<p class="caption-text">The biggest challenge I faced was lighting; it took a tremendous amount of effort and research to get light from a single source (the far wall) to look correct, matching the reference image. Overall, I'm thrilled with how this came out; I've had several people tell me they didn't know it was a digital render until I told them, which is a good sign.<p>
+				<p class="caption-text">The biggest challenge I faced was lighting; it took a tremendous amount of effort and research to get light from a single source (the far wall) to look correct, matching the reference image. Overall, I'm thrilled with how this came out; I've had several people tell me they didn't know it was a digital render until I told them, which is a good sign.</p>
 			</div>
 		</section>
+
+
 
 		<section class="section standalone-image-section">
 			<h3 class="centered-header">Reference Image</h3>
-			<div class="image-wrapper">
-				<img src="img/gr/Reference.jpg" alt="Grey Room Reference" class="centered-image">
-        
-				<p class="caption-text">I used this image as the reference for my scene. I chose it for the diverse materials and clean presentation. I had a very tight deadline for creation, about ten days, so I wanted to focus on just a few objects and nailing those instead of overwhelming myself with numerous lower-quality assets.<p>
+				<div class="image-wrapper"><img src="img/gr/Reference.jpg" alt="Grey Room Reference" class="centered-image">
+				<p class="caption-text">I used this image as the reference for my scene. I chose it for the diverse materials and clean presentation. I had a very tight deadline for creation, about ten days, so I wanted to focus on just a few objects and nailing those instead of overwhelming myself with numerous lower-quality assets.</p>
 			</div>
 		</section>
 
+
+
     </main>
 
-    <footer class="site-footer">
-        <p>&copy; 2025 Kyle Hanselman. Thanks for visiting HanselmanDesign.com!</p>
-        <a href="#top" class="back-to-top">Back To Top</a>
-    </footer>
+	<footer class="site-footer">
+		<p>&copy; 2025 Kyle Hanselman. Thanks for visiting HanselmanDesign.com!</p>
+		<a href="#top" class="back-to-top">Back To Top</a>
+	</footer>
 
 	<script>
 		// Java script that runs my galleries
